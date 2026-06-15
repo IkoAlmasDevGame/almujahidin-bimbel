@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bimbel-almujahidin.vercel.app/sitemap.xml
+Sitemap: https://almujahidin-bimbel.vercel.app/sitemap.xml
