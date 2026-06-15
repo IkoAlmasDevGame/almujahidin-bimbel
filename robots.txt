@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.domainteman.com/sitemap.xml
+Sitemap: https://bimbel-almujahidin.vercel.app/sitemap.xml
