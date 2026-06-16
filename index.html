@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bimbel Masjid Jami Al Mujahidin Kp. Lio</title>
     
-    <!-- Google Fonts: Plus Jakarta Sans (Premium Sans-Serif) -->
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="icon" href="LOGO.jpg" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,8 @@
     <meta name="description" content="Free Web Demo Bimbel Masjid Jami Al Mujahidin Kp. Lio">
     <meta name="keywords" content="Bimbel, Bimbel Kp.Lio, Bimbel Masjid Jami Al Mujahidin">
     <meta name="author" content="IT Developer Masjid Jami Al Mujahidin Kp. Lio">
-    <!-- FontAwesome for Premium Icons -->
+    
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Tailwind CSS -->
@@ -48,8 +49,8 @@
                         }
                     },
                     boxShadow: {
-                        'premium': '0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02)',
-                        'premium-hover': '0 20px 40px -15px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.03)',
+                        'premium': '0 10px 30px -10px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.01)',
+                        'premium-hover': '0 20px 40px -15px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.02)',
                     }
                 }
             }
@@ -57,104 +58,95 @@
     </script>
 
     <style>
-        /* 3D Depth Effect for Buttons (Top Firm Standard) */
+        /* Proportional 3D Depth Effect */
         .btn-depth-primary {
             position: relative;
-            transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateY(0);
-            box-shadow: 0 4px 0 0 #047857, 0 8px 16px -4px rgba(5, 150, 105, 0.3);
+            box-shadow: 0 4px 0 0 #047857, 0 6px 12px -2px rgba(5, 150, 105, 0.25);
         }
         .btn-depth-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 0 0 #047857, 0 12px 20px -4px rgba(5, 150, 105, 0.35);
+            box-shadow: 0 6px 0 0 #047857, 0 10px 16px -2px rgba(5, 150, 105, 0.3);
         }
         .btn-depth-primary:active {
-            transform: translateY(4px);
-            box-shadow: 0 0 0 0 #047857, 0 2px 4px 0 rgba(0,0,0,0.1);
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 #047857, 0 2px 4px -1px rgba(5, 150, 105, 0.2);
         }
 
         .btn-depth-secondary {
             position: relative;
-            transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateY(0);
-            box-shadow: 0 4px 0 0 #cbd5e1, 0 8px 16px -4px rgba(148, 163, 184, 0.15);
+            box-shadow: 0 4px 0 0 #cbd5e1, 0 6px 12px -2px rgba(148, 163, 184, 0.1);
         }
         .btn-depth-secondary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 0 0 #cbd5e1, 0 12px 20px -4px rgba(148, 163, 184, 0.2);
+            box-shadow: 0 6px 0 0 #cbd5e1, 0 10px 16px -2px rgba(148, 163, 184, 0.15);
         }
         .btn-depth-secondary:active {
-            transform: translateY(4px);
-            box-shadow: 0 0 0 0 #cbd5e1, 0 2px 4px 0 rgba(0,0,0,0.05);
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 0 #cbd5e1, 0 2px 4px -1px rgba(148, 163, 184, 0.08);
         }
 
-        /* Smooth Glassmorphism Navbar */
+        /* Seamless Glassmorphism Navbar */
         .glass-nav {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(241, 245, 249, 0.8);
         }
 
-        /* Reveal Animations */
+        /* Reveal Animation Framework */
         .reveal {
             opacity: 0;
             transform: translateY(24px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
 
-        /* Custom Scrollbar for Premium Feel */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 9999px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden selection:bg-primary-100 selection:text-primary-900">
 
-    <!-- 1. Navbar (Sleek and Responsive) -->
+    <!-- 1. Navbar -->
     <header class="fixed w-full top-0 z-50 glass-nav transition-all duration-300 py-3">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-3.5 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
                     <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md shadow-primary-600/20">
                         <i class="fa-solid fa-mosque"></i>
                     </div>
                     <div class="flex flex-col">
-                        <span class="font-extrabold text-lg tracking-tight text-slate-900 leading-none">Al Mujahidin</span>
-                        <span class="text-[10px] text-primary-600 font-bold tracking-wider uppercase mt-1">Bimbingan Belajar</span>
+                        <span class="font-extrabold text-lg md:text-xl tracking-tight text-slate-900 leading-none">Al Mujahidin</span>
+                        <span class="text-[9px] md:text-[10px] text-primary-600 font-extrabold tracking-widest uppercase mt-1">Bimbingan Belajar</span>
                     </div>
                 </div>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center">
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-7 items-center">
                     <a href="#beranda" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Beranda</a>
-                    <a href="#tentang" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Tentang Kami</a>
+                    <a href="#tentang" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Tentang</a>
                     <a href="#program" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Program</a>
                     <a href="#jadwal" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Jadwal</a>
                     <a href="#galeri" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Galeri</a>
                     <a href="#kontak" class="text-sm font-semibold text-slate-600 hover:text-primary-600 transition-colors">Kontak</a>
                     <a href="#kontak" class="bg-primary-600 text-white px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider btn-depth-primary">
-                        Daftar Sekarang
+                        Daftar
                     </a>
                 </nav>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-700 hover:text-primary-600 focus:outline-none p-2 transition-colors">
                         <i class="fa-solid fa-bars-staggered text-2xl"></i>
                     </button>
@@ -162,129 +154,129 @@
             </div>
         </div>
 
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-b border-slate-100 shadow-xl absolute w-full left-0 top-full transition-all duration-300">
-            <div class="px-6 py-6 space-y-3">
-                <a href="#beranda" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Beranda</a>
-                <a href="#tentang" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Tentang Kami</a>
-                <a href="#program" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Program Unggulan</a>
-                <a href="#jadwal" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Jadwal</a>
-                <a href="#galeri" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Galeri</a>
-                <a href="#kontak" class="block px-4 py-3 rounded-xl text-base font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600 transition-colors">Kontak</a>
-                <div class="pt-4 border-t border-slate-100">
-                    <a href="#kontak" class="block w-full text-center bg-primary-600 text-white py-3.5 rounded-xl font-bold btn-depth-primary">Daftar Sekarang</a>
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-lg border-b border-slate-100 shadow-xl absolute w-full left-0 top-full transition-all duration-300">
+            <div class="px-5 py-5 space-y-2">
+                <a href="#beranda" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Beranda</a>
+                <a href="#tentang" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Tentang Kami</a>
+                <a href="#program" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Program Unggulan</a>
+                <a href="#jadwal" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Jadwal Kelas</a>
+                <a href="#galeri" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Galeri</a>
+                <a href="#kontak" class="block px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-primary-50 hover:text-primary-600">Kontak</a>
+                <div class="pt-4 border-t border-slate-100 mt-2">
+                    <a href="#kontak" class="block w-full text-center bg-primary-600 text-white py-3.5 rounded-xl font-bold text-sm btn-depth-primary">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- 2. Hero Section (Perfect Balance & Visual Depth) -->
-    <section id="beranda" class="pt-28 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16 relative">
-        <!-- Premium Ambient Lights -->
-        <div class="absolute top-1/4 -left-24 w-80 h-80 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-10"></div>
-        <div class="absolute top-1/3 -right-24 w-80 h-80 bg-accent-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -z-10"></div>
+    <!-- 2. Hero Section -->
+    <section id="beranda" class="pt-28 pb-16 md:pt-36 lg:pt-40 lg:pb-24 px-5 sm:px-8 lg:px-10 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-14 relative">
+        <!-- Ambient Lights -->
+        <div class="absolute top-1/4 -left-20 w-72 h-72 bg-primary-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 -z-10"></div>
+        <div class="absolute top-1/3 -right-20 w-72 h-72 bg-accent-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
 
-        <!-- Left Text Content -->
+        <!-- Hero Texts & CTAs -->
         <div class="flex-1 text-center lg:text-left z-10 reveal">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-primary-50 text-primary-800 font-bold text-xs tracking-wider uppercase mb-6 border border-primary-100/50">
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-primary-50 text-primary-800 font-bold text-[10px] md:text-xs tracking-wider uppercase mb-5 md:mb-6 border border-primary-100/50">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
                 </span>
-                Pendaftaran Santri Baru Telah Dibuka
+                Pendaftaran Santri Baru Dibuka
             </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.12] tracking-tight mb-6">
+            <!-- Proportional Headings: Tighter leading, scaled appropriately -->
+            <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-slate-900 leading-[1.15] lg:leading-tight tracking-tight mb-5 md:mb-6">
                 Bimbel Masjid <br class="hidden lg:block"/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">Jami Al Mujahidin</span> <br/>
                 <span class="text-slate-800">Kp. Lio</span>
             </h1>
-            <p class="text-base sm:text-lg text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+            <p class="text-sm md:text-base lg:text-lg text-slate-600 mb-8 md:mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
                 "Mewujudkan Generasi Muslim yang Cerdas, Berakhlak Mulia, dan Berprestasi Melalui Pendidikan Berbasis Masjid."
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a href="#kontak" class="bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-sm tracking-wider uppercase btn-depth-primary text-center">
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
+                <a href="#kontak" class="bg-primary-600 text-white px-6 py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-xs md:text-sm tracking-wider uppercase btn-depth-primary text-center">
                     <i class="fa-solid fa-user-plus mr-2"></i> Daftar Sekarang
                 </a>
-                <a href="#program" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-bold text-sm tracking-wider uppercase btn-depth-secondary text-center">
+                <a href="#program" class="bg-white text-slate-700 border border-slate-200 px-6 py-3.5 md:px-8 md:py-4 rounded-xl font-bold text-xs md:text-sm tracking-wider uppercase btn-depth-secondary text-center">
                     <i class="fa-solid fa-compass mr-2"></i> Lihat Program
                 </a>
             </div>
         </div>
 
-        <!-- Right Visual Mockup (High-Fidelity) -->
-        <div class="flex-1 w-full max-w-lg lg:max-w-none relative z-10 reveal">
+        <!-- High-Fidelity Mockup Container -->
+        <div class="flex-1 w-full max-w-md md:max-w-lg lg:max-w-none relative z-10 reveal">
             <div class="relative rounded-3xl overflow-hidden shadow-premium border-8 border-white bg-slate-900 aspect-[4/3] group transition-all duration-300">
-                <!-- Premium Custom Placeholder Graphic using inline SVGs to match Top Firm Quality -->
-                <div class="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-slate-900 flex flex-col items-center justify-center p-8 text-center">
-                    <svg class="w-24 h-24 text-primary-200/20 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-slate-950 flex flex-col items-center justify-center p-6 text-center">
+                    <svg class="w-16 h-16 md:w-20 md:h-20 text-primary-400/20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                     </svg>
-                    <span class="text-xs uppercase font-extrabold tracking-widest text-primary-400 mb-2">Dokumentasi Utama</span>
-                    <h4 class="text-white font-extrabold text-xl tracking-tight">Foto Kegiatan Belajar Mengajar</h4>
-                    <p class="text-slate-400 text-xs max-w-xs mt-2">Bimbel Masjid Jami Al Mujahidin Kp. Lio</p>
+                    <span class="text-[10px] md:text-xs uppercase font-extrabold tracking-widest text-primary-400 mb-1.5">Dokumentasi</span>
+                    <h4 class="text-white font-extrabold text-lg md:text-xl tracking-tight">Kegiatan Belajar</h4>
+                    <p class="text-slate-400 text-[10px] md:text-xs mt-1.5">Bimbel Masjid Jami Al Mujahidin</p>
                 </div>
                 <div class="absolute inset-0 bg-primary-950/10 mix-blend-overlay"></div>
             </div>
 
-            <!-- Floater Badge (Proper Spacing & Proportion) -->
-            <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white py-4 px-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 transition-transform duration-300 hover:scale-105">
-                <div class="bg-amber-50 p-3 rounded-xl text-amber-500">
-                    <i class="fa-solid fa-star text-lg"></i>
+            <!-- Suspended Info Badge -->
+            <div class="absolute -bottom-5 -left-3 sm:-bottom-6 sm:-left-6 bg-white py-3 px-4 sm:py-4 sm:px-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 md:gap-4 transition-transform duration-300 hover:scale-105">
+                <div class="bg-amber-50 p-2.5 sm:p-3 rounded-xl text-amber-500">
+                    <i class="fa-solid fa-star text-base sm:text-lg"></i>
                 </div>
                 <div>
-                    <p class="text-[10px] text-slate-400 font-extrabold uppercase tracking-widest">Lingkungan</p>
-                    <p class="text-sm font-extrabold text-slate-800">Nyaman & Islami</p>
+                    <p class="text-[9px] sm:text-[10px] text-slate-400 font-extrabold uppercase tracking-widest">Lingkungan</p>
+                    <p class="text-xs sm:text-sm font-extrabold text-slate-800">Nyaman & Islami</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 3. About Masjid (Tentang Kami) -->
-    <section id="tentang" class="py-20 md:py-28 bg-white relative">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20 reveal">
-                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-xs">Tentang Kami</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-6">Tentang Bimbel Masjid Jami Al Mujahidin</h2>
-                <div class="w-16 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
-                <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+    <section id="tentang" class="py-16 md:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
+                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Tentang Kami</span>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5 mb-5">Mengenal Bimbel Masjid Jami Al Mujahidin</h2>
+                <div class="w-12 h-1.5 bg-primary-600 mx-auto mb-5 rounded-full"></div>
+                <p class="text-sm md:text-base text-slate-600 leading-relaxed font-medium">
                     Bimbel Masjid Jami Al Mujahidin Kp. Lio merupakan program pendidikan nonformal yang diselenggarakan untuk membantu anak-anak dan remaja meningkatkan kemampuan akademik, bahasa, serta pemahaman keislaman dalam lingkungan masjid yang nyaman dan islami.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 reveal">
-                <!-- Visi -->
-                <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-100 hover:shadow-premium transition-all duration-300">
-                    <div class="w-12 h-12 bg-primary-100 text-primary-700 rounded-2xl flex items-center justify-center text-xl mb-6 shadow-sm">
+            <div class="grid md:grid-cols-2 gap-6 lg:gap-8 reveal">
+                <!-- Visi Card -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-100 hover:shadow-premium transition-all duration-300 flex flex-col">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-700 rounded-2xl flex items-center justify-center text-xl mb-5 shadow-sm">
                         <i class="fa-solid fa-eye"></i>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Visi</h3>
-                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                    <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">Visi</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
                         Menjadi pusat pendidikan berbasis masjid yang unggul dalam membentuk generasi muslim yang cerdas, kreatif, dan berakhlak mulia.
                     </p>
                 </div>
 
-                <!-- Misi -->
-                <div class="bg-primary-900 p-8 sm:p-10 rounded-3xl shadow-xl shadow-primary-950/10 text-white hover:shadow-premium transition-all duration-300">
-                    <div class="w-12 h-12 bg-white/10 text-white rounded-2xl flex items-center justify-center text-xl mb-6 backdrop-blur-sm border border-white/10">
+                <!-- Misi Card -->
+                <div class="bg-primary-900 p-6 sm:p-8 rounded-3xl shadow-xl shadow-primary-950/10 text-white hover:shadow-premium transition-all duration-300 flex flex-col">
+                    <div class="w-12 h-12 bg-white/10 text-white rounded-2xl flex items-center justify-center text-xl mb-5 backdrop-blur-sm border border-white/10">
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <h3 class="text-xl sm:text-2xl font-bold mb-5">Misi</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3.5">
-                            <i class="fa-solid fa-circle-check mt-1 text-primary-300"></i>
-                            <span class="text-primary-100 text-sm sm:text-base">Menyelenggarakan pembelajaran berkualitas.</span>
+                    <h3 class="text-lg md:text-xl font-bold mb-4">Misi</h3>
+                    <ul class="space-y-3.5 mt-auto">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check mt-0.5 text-primary-300 text-sm"></i>
+                            <span class="text-primary-100 text-xs sm:text-sm">Menyelenggarakan pembelajaran berkualitas.</span>
                         </li>
-                        <li class="flex items-start gap-3.5">
-                            <i class="fa-solid fa-circle-check mt-1 text-primary-300"></i>
-                            <span class="text-primary-100 text-sm sm:text-base">Mengembangkan kemampuan akademik dan keagamaan.</span>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check mt-0.5 text-primary-300 text-sm"></i>
+                            <span class="text-primary-100 text-xs sm:text-sm">Mengembangkan kemampuan akademik dan keagamaan.</span>
                         </li>
-                        <li class="flex items-start gap-3.5">
-                            <i class="fa-solid fa-circle-check mt-1 text-primary-300"></i>
-                            <span class="text-primary-100 text-sm sm:text-base">Membentuk karakter islami.</span>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check mt-0.5 text-primary-300 text-sm"></i>
+                            <span class="text-primary-100 text-xs sm:text-sm">Membentuk karakter islami.</span>
                         </li>
-                        <li class="flex items-start gap-3.5">
-                            <i class="fa-solid fa-circle-check mt-1 text-primary-300"></i>
-                            <span class="text-primary-100 text-sm sm:text-base">Menumbuhkan semangat belajar sepanjang hayat.</span>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check mt-0.5 text-primary-300 text-sm"></i>
+                            <span class="text-primary-100 text-xs sm:text-sm">Menumbuhkan semangat belajar sepanjang hayat.</span>
                         </li>
                     </ul>
                 </div>
@@ -292,148 +284,145 @@
         </div>
     </section>
 
-    <!-- 4. Program Unggulan (Perfect 4-Column Grid Alignment) -->
-    <section id="program" class="py-20 md:py-28 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-xs">Layanan Kami</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Program Unggulan Bimbel</h2>
-                <div class="w-16 h-1 bg-primary-600 mx-auto mb-6 rounded-full"></div>
-                <p class="text-slate-600 text-base sm:text-lg">Pilihan kelas komprehensif untuk mendukung tumbuh kembang anak baik secara akademik maupun spiritual.</p>
+    <!-- 4. Program Unggulan (Perfect 3-Column Symmetry) -->
+    <section id="program" class="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
+                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Layanan Kami</span>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5 mb-5">Program Unggulan Bimbel</h2>
+                <div class="w-12 h-1.5 bg-primary-600 mx-auto mb-5 rounded-full"></div>
+                <p class="text-sm md:text-base text-slate-600">Pilihan kelas komprehensif untuk mendukung tumbuh kembang anak baik secara akademik maupun spiritual.</p>
             </div>
 
-            <!-- Balanced 4-Column Responsive Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 reveal">
+            <!-- Balanced 3-Column Responsive Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 reveal">
                 
-                <!-- Program 1 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                <!-- Normal Cards 1-6 -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-book-quran"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Kelas Bahasa Arab</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Belajar membaca, menulis, dan percakapan dasar Bahasa Arab dengan metode interaktif.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Kelas Bahasa Arab</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Belajar membaca, menulis, dan percakapan dasar Bahasa Arab dengan interaktif.</p>
                 </div>
 
-                <!-- Program 2 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Kelas Bahasa Inggris</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Belajar grammar, vocabulary, speaking, dan listening untuk persiapan global.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Kelas Bahasa Inggris</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Belajar grammar, vocabulary, speaking, dan listening untuk persiapan global.</p>
                 </div>
 
-                <!-- Program 3 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-pencil"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Kelas Calistung</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Belajar membaca, menulis, dan berhitung khusus dirancang untuk anak usia dini.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Kelas Calistung</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Belajar membaca, menulis, dan berhitung khusus dirancang untuk anak usia dini.</p>
                 </div>
 
-                <!-- Program 4 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-calculator"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Kelas Matematika</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Pendalaman materi matematika sekolah secara mudah, logis, dan menyenangkan.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Kelas Matematika</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Pendalaman materi matematika sekolah secara mudah, logis, dan menyenangkan.</p>
                 </div>
 
-                <!-- Program 5 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-book-open-reader"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Perbaikan Al-Qur'an</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Memperbaiki makhraj, tajwid, dan kelancaran membaca Al-Qur'an secara tartil.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Perbaikan Al-Qur'an</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Memperbaiki makhraj, tajwid, dan kelancaran membaca Al-Qur'an secara tartil.</p>
                 </div>
 
-                <!-- Program 6 -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group">
-                    <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center text-lg mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
                         <i class="fa-solid fa-drum"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Kelas Hadroh</h3>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">Belajar seni islami menabuh hadroh dan melantunkan shalawat nabi.</p>
+                    <h3 class="text-base md:text-lg font-bold text-slate-900 mb-2.5">Kelas Hadroh</h3>
+                    <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Belajar seni islami menabuh hadroh dan melantunkan shalawat nabi bersama.</p>
                 </div>
 
-                <!-- Program 7 (Unified Grid Sizing) -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1.5 transition-all duration-300 group sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-col justify-center">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center text-lg shrink-0 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                            <i class="fa-solid fa-mosque"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900">Kelas TPA</h3>
+                <!-- Program 7: TPA (Spans Full Grid Bottom to Maintain Perfect Balance) -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-100 shadow-premium hover:shadow-premium-hover hover:-translate-y-1 transition-all duration-300 group md:col-span-2 lg:col-span-3 flex flex-col lg:flex-row items-start lg:items-center gap-5 lg:gap-8">
+                    <div class="w-14 h-14 bg-primary-50 text-primary-600 rounded-2xl flex items-center justify-center text-xl shrink-0 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-mosque"></i>
                     </div>
-                    <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
-                        Taman Pendidikan Al-Qur'an: Mempelajari dasar-dasar agama Islam, hafalan doa harian, fiqih ibadah praktis, dan pembinaan akhlak karimah secara komprehensif.
-                    </p>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-2">Kelas TPA (Taman Pendidikan Al-Qur'an)</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Mempelajari dasar-dasar agama Islam, hafalan doa harian, fiqih ibadah praktis, dan pembinaan akhlak karimah secara komprehensif untuk membentuk pondasi spiritual yang kuat sejak dini.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block ml-auto">
+                        <a href="#kontak" class="text-primary-600 font-bold text-sm tracking-wide group-hover:text-primary-800 flex items-center gap-2">Detail <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- 5. Jadwal Program Unggulan (Perfect Table Alignment) -->
-    <section id="jadwal" class="py-20 md:py-28 bg-white">
-        <div class="max-w-5xl mx-auto px-6 sm:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
-                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-xs">Agenda Utama</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-6">Jadwal Kegiatan</h2>
-                <p class="text-primary-800 text-sm sm:text-base inline-flex items-center gap-2.5 bg-primary-50 border border-primary-100/50 px-5 py-2.5 rounded-full font-semibold">
+    <!-- 5. Jadwal Program Unggulan (Proportional Table) -->
+    <section id="jadwal" class="py-16 md:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12 reveal">
+                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Agenda Utama</span>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5 mb-5">Jadwal Kegiatan</h2>
+                <p class="text-primary-800 text-xs sm:text-sm inline-flex items-center gap-2 bg-primary-50 border border-primary-100/50 px-4 py-2 rounded-full font-semibold">
                     <i class="fa-regular fa-calendar-check text-primary-600"></i>
-                    Kegiatan dilaksanakan setiap Hari <strong>Sabtu</strong> dan <strong>Minggu</strong>
+                    Dilaksanakan setiap <strong>Sabtu</strong> dan <strong>Minggu</strong>
                 </p>
             </div>
 
-            <!-- Beautiful Minimalist Table -->
-            <div class="bg-white rounded-3xl shadow-premium border border-slate-100 overflow-hidden reveal">
+            <div class="bg-white rounded-2xl sm:rounded-3xl shadow-premium border border-slate-100 overflow-hidden reveal">
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse min-w-[500px]">
                         <thead>
                             <tr class="bg-slate-900 text-white">
-                                <th class="py-5 px-8 font-semibold text-xs uppercase tracking-wider w-2/5">Nama Program</th>
-                                <th class="py-5 px-8 font-semibold text-xs uppercase tracking-wider w-1/5">Hari</th>
-                                <th class="py-5 px-8 font-semibold text-xs uppercase tracking-wider w-2/5">Waktu Belajar</th>
+                                <th class="py-4 px-5 sm:px-8 font-semibold text-[11px] md:text-xs uppercase tracking-wider w-2/5">Nama Program</th>
+                                <th class="py-4 px-5 sm:px-8 font-semibold text-[11px] md:text-xs uppercase tracking-wider w-1/5">Hari</th>
+                                <th class="py-4 px-5 sm:px-8 font-semibold text-[11px] md:text-xs uppercase tracking-wider w-2/5">Waktu Belajar</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100">
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Bahasa Arab</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Sabtu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">08.00 - 09.30 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Bahasa Arab</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Sabtu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">08.00 - 09.30 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Bahasa Inggris</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Sabtu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">09.30 - 11.00 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Bahasa Inggris</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Sabtu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">09.30 - 11.00 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Calistung</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Sabtu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">13.00 - 14.30 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Calistung</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Sabtu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">13.00 - 14.30 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span> Matematika</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Sabtu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">14.30 - 16.00 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Matematika</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Sabtu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">14.30 - 16.00 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Perbaikan Baca Al-Qur'an</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Minggu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">08.00 - 09.30 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-teal-500"></span> Perbaikan Al-Qur'an</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Minggu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">08.00 - 09.30 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> Hadroh</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Minggu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">09.30 - 11.00 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-rose-500"></span> Hadroh</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Minggu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">09.30 - 11.00 WIB</span></td>
                             </tr>
                             <tr class="hover:bg-slate-50/50 transition-colors">
-                                <td class="py-4.5 px-8 text-slate-850 font-bold text-sm sm:text-base flex items-center gap-3"><span class="w-2.5 h-2.5 rounded-full bg-primary-500"></span> TPA (Taman Pendidikan Al-Qur'an)</td>
-                                <td class="py-4.5 px-8 text-slate-600 font-semibold text-sm">Minggu</td>
-                                <td class="py-4.5 px-8 text-slate-600"><span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-xs sm:text-sm font-semibold">13.00 - 15.00 WIB</span></td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-800 font-bold text-xs sm:text-sm flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-primary-500"></span> TPA (Taman Pendidikan)</td>
+                                <td class="py-4 px-5 sm:px-8 text-slate-600 font-semibold text-xs sm:text-sm">Minggu</td>
+                                <td class="py-4 px-5 sm:px-8"><span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-semibold">13.00 - 15.00 WIB</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -442,167 +431,161 @@
         </div>
     </section>
 
-    <!-- 6. Galeri Foto Aktivitas (Consistent Multi-Grid) -->
-    <section id="galeri" class="py-20 md:py-28 bg-slate-950 text-white">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-8 reveal">
+    <!-- 6. Galeri Foto Aktivitas -->
+    <section id="galeri" class="py-16 md:py-24 bg-slate-950 text-white">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 gap-6 reveal">
                 <div class="max-w-2xl">
-                    <span class="text-primary-400 font-extrabold tracking-widest uppercase text-xs">Portofolio</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold mt-3 mb-4">Galeri Kegiatan Bimbel</h2>
-                    <p class="text-slate-400 text-sm sm:text-base">
+                    <span class="text-primary-400 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Portofolio</span>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold mt-2.5 mb-4">Galeri Kegiatan Bimbel</h2>
+                    <p class="text-slate-400 text-sm md:text-base">
                         Dokumentasi berbagai kegiatan belajar mengajar, kajian, TPA, hadroh, dan aktivitas edukatif lainnya yang diselenggarakan oleh Bimbel Masjid Jami Al Mujahidin Kp. Lio.
                     </p>
                 </div>
-                <div class="shrink-0">
-                    <button class="bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider transition-all duration-300 border border-white/10 btn-depth-secondary">
+                <div class="shrink-0 w-full lg:w-auto">
+                    <button class="w-full lg:w-auto bg-white/10 hover:bg-white/20 text-white px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 border border-white/10 btn-depth-secondary text-center">
                         Lihat Semua Foto <i class="fa-solid fa-arrow-right ml-2"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Balanced 3-Column Aspect-Ratio Gallery -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 reveal">
+            <!-- Standardized Aspect Ratio Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 reveal">
                 <!-- Foto 1 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-graduation-cap text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Kegiatan Belajar Arab</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Kegiatan Belajar Arab</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Bahasa Arab & Al-Qur'an</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Bahasa Arab & Al-Qur'an</p>
                     </div>
                 </div>
                 <!-- Foto 2 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-children text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Aktivitas Kelas Calistung</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Aktivitas Kelas Calistung</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Kelas Calistung</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Kelas Calistung</p>
                     </div>
                 </div>
                 <!-- Foto 3 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-drum text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Latihan Seni Hadroh</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Latihan Seni Hadroh</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Seni Musik Hadroh</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Seni Musik Hadroh</p>
                     </div>
                 </div>
                 <!-- Foto 4 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-square-root-variable text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Evaluasi Matematika</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Evaluasi Matematika</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Pendalaman Matematika</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Pendalaman Matematika</p>
                     </div>
                 </div>
                 <!-- Foto 5 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-mosque text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Suasana Masjid Al Mujahidin</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Suasana Masjid Al Mujahidin</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Masjid Jami Al Mujahidin</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Masjid Jami Al Mujahidin</p>
                     </div>
                 </div>
                 <!-- Foto 6 -->
-                <div class="aspect-video bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
+                <div class="aspect-[4/3] bg-slate-900 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-800">
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 bg-slate-900">
                         <i class="fa-solid fa-language text-3xl mb-2 text-primary-500/20"></i>
-                        <p class="text-xs font-bold text-slate-400">Belajar Bahasa Inggris</p>
+                        <p class="text-[11px] md:text-xs font-bold text-slate-400">Belajar Bahasa Inggris</p>
                     </div>
-                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-6">
-                        <i class="fa-solid fa-magnifying-glass-plus text-3xl text-white mb-2"></i>
-                        <p class="text-sm font-bold text-white">Kelas Bahasa Inggris</p>
+                    <div class="absolute inset-0 bg-primary-950/80 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 z-10 p-5">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl text-white mb-2"></i>
+                        <p class="text-xs md:text-sm font-bold text-white">Kelas Bahasa Inggris</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. Testimoni Santri & Orang Tua (Consistent Card Heights) -->
-    <section class="py-20 md:py-28 bg-primary-50 relative overflow-hidden">
-        <div class="absolute right-0 top-0 w-80 h-80 bg-primary-200/50 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
+    <!-- 7. Testimoni Santri & Orang Tua -->
+    <section class="py-16 md:py-24 bg-primary-50 relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-64 h-64 md:w-80 md:h-80 bg-primary-200/50 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
         
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-xs">Ulasan Publik</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3">Apa Kata Mereka?</h2>
-                <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
+                <span class="text-primary-600 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Ulasan Publik</span>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5">Apa Kata Mereka?</h2>
+                <div class="w-12 h-1.5 bg-primary-600 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 reveal">
                 <!-- Testimoni 1 -->
-                <div class="bg-white p-8 rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl md:rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
                     <div>
-                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center text-md shadow-md mb-6">
-                            <i class="fa-solid fa-quote-left"></i>
+                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center shadow-md mb-5">
+                            <i class="fa-solid fa-quote-left text-sm"></i>
                         </div>
-                        <p class="text-slate-600 text-base italic leading-relaxed mb-8">
+                        <p class="text-slate-600 text-sm md:text-base italic leading-relaxed mb-6">
                             "Alhamdulillah, sejak ikut bimbingan belajar di masjid ini, anak saya menjadi semakin lancar membaca Al-Qur'an dan hafalannya bertambah setiap minggu."
                         </p>
                     </div>
-                    <div class="flex items-center gap-4 border-t border-slate-100 pt-5">
-                        <div class="w-11 h-11 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 font-bold shrink-0">
-                            A
-                        </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 font-bold shrink-0 text-sm">A</div>
                         <div>
-                            <h5 class="font-extrabold text-slate-900 text-sm">Bunda Aisyah</h5>
-                            <p class="text-xs text-slate-400 font-semibold">Orang Tua Santri TPA</p>
+                            <h5 class="font-extrabold text-slate-900 text-xs md:text-sm">Bunda Aisyah</h5>
+                            <p class="text-[10px] md:text-xs text-slate-400 font-semibold">Orang Tua Santri TPA</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimoni 2 -->
-                <div class="bg-white p-8 rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl md:rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
                     <div>
-                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center text-md shadow-md mb-6">
-                            <i class="fa-solid fa-quote-left"></i>
+                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center shadow-md mb-5">
+                            <i class="fa-solid fa-quote-left text-sm"></i>
                         </div>
-                        <p class="text-slate-600 text-base italic leading-relaxed mb-8">
+                        <p class="text-slate-600 text-sm md:text-base italic leading-relaxed mb-6">
                             "Belajar matematika jadi jauh lebih mudah dipahami. Tutornya sangat sabar mengajari berbagai rumus cepat dan menyenangkan."
                         </p>
                     </div>
-                    <div class="flex items-center gap-4 border-t border-slate-100 pt-5">
-                        <div class="w-11 h-11 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold shrink-0">
-                            F
-                        </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold shrink-0 text-sm">F</div>
                         <div>
-                            <h5 class="font-extrabold text-slate-900 text-sm">Fikri</h5>
-                            <p class="text-xs text-slate-400 font-semibold">Santri Kelas SMP</p>
+                            <h5 class="font-extrabold text-slate-900 text-xs md:text-sm">Fikri</h5>
+                            <p class="text-[10px] md:text-xs text-slate-400 font-semibold">Santri Kelas SMP</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimoni 3 -->
-                <div class="bg-white p-8 rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl md:rounded-3xl shadow-premium relative flex flex-col justify-between hover:shadow-premium-hover transition-all duration-300">
                     <div>
-                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center text-md shadow-md mb-6">
-                            <i class="fa-solid fa-quote-left"></i>
+                        <div class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center shadow-md mb-5">
+                            <i class="fa-solid fa-quote-left text-sm"></i>
                         </div>
-                        <p class="text-slate-600 text-base italic leading-relaxed mb-8">
+                        <p class="text-slate-600 text-sm md:text-base italic leading-relaxed mb-6">
                             "Lingkungan belajarnya sangat nyaman, aman, dan sarat nilai islami. Anak saya sekarang lebih antusias berangkat ke masjid saat akhir pekan."
                         </p>
                     </div>
-                    <div class="flex items-center gap-4 border-t border-slate-100 pt-5">
-                        <div class="w-11 h-11 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 font-bold shrink-0">
-                            R
-                        </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 font-bold shrink-0 text-sm">R</div>
                         <div>
-                            <h5 class="font-extrabold text-slate-900 text-sm">Bapak Ridwan</h5>
-                            <p class="text-xs text-slate-400 font-semibold">Orang Tua Santri Calistung</p>
+                            <h5 class="font-extrabold text-slate-900 text-xs md:text-sm">Bapak Ridwan</h5>
+                            <p class="text-[10px] md:text-xs text-slate-400 font-semibold">Orang Tua Santri Calistung</p>
                         </div>
                     </div>
                 </div>
@@ -610,42 +593,42 @@
         </div>
     </section>
 
-    <!-- 8. Kontak & Lokasi (Proportional Mapping Layout) -->
-    <section id="kontak" class="py-20 md:py-28 bg-white border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="grid lg:grid-cols-2 gap-16 items-start reveal">
+    <!-- 8. Kontak & Lokasi -->
+    <section id="kontak" class="py-16 md:py-24 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch reveal">
                 
                 <!-- Info Kontak -->
-                <div class="space-y-8">
+                <div class="space-y-6 md:space-y-8 flex flex-col justify-center">
                     <div>
-                        <span class="text-primary-600 font-extrabold tracking-widest uppercase text-xs">Peta & Kontak</span>
-                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Pendaftaran & Informasi</h2>
-                        <p class="text-slate-500 text-base leading-relaxed">
+                        <span class="text-primary-600 font-extrabold tracking-widest uppercase text-[10px] md:text-xs">Peta & Kontak</span>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2.5 mb-4">Pendaftaran & Informasi</h2>
+                        <p class="text-slate-500 text-sm md:text-base leading-relaxed">
                             Pendidikan berkualitas berbasis masjid telah hadir. Silakan gunakan informasi kontak berikut atau kunjungi sekretariat kami langsung di lokasi Masjid Jami Al Mujahidin.
                         </p>
                     </div>
 
-                    <div class="space-y-5">
+                    <div class="space-y-4 md:space-y-5">
                         <!-- Alamat -->
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <div class="w-10 h-10 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center text-base shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Alamat Lokasi</h4>
-                                <p class="text-slate-500 text-sm mt-1">Jl. H. Ismail 8, RT.8/RW.3, Jatinegara, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13930</p>
+                                <h4 class="font-bold text-slate-900 text-xs md:text-sm uppercase tracking-wide">Alamat Lokasi</h4>
+                                <p class="text-slate-500 text-xs md:text-sm mt-1 leading-relaxed">Jl. H. Ismail 8, RT.8/RW.3, Jatinegara, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13930</p>
                             </div>
                         </div>
                         
                         <!-- WhatsApp -->
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-base shrink-0">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">WhatsApp Admin</h4>
-                                <p class="text-slate-500 text-sm mt-1">
-                                    <a href="https://wa.me/628111089722" target="_blank" class="font-bold text-slate-900 text-sm uppercase">
+                                <h4 class="font-bold text-slate-900 text-xs md:text-sm uppercase tracking-wide">WhatsApp Admin</h4>
+                                <p class="text-slate-600 mt-1">
+                                    <a href="https://wa.me/628111089722" target="_blank" class="font-extrabold text-slate-900 text-xs md:text-sm hover:text-primary-600 transition-colors">
                                         +62 811-1089-722
                                     </a>
                                 </p>
@@ -654,78 +637,81 @@
 
                         <!-- Email -->
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-base shrink-0">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Email Akademik</h4>
-                                <p class="text-slate-500 text-sm mt-1">
-                                    <a href="maito:panrenov.almuja2023@gmail.com">panrenov.almuja2023@gmail.com</a>
+                                <h4 class="font-bold text-slate-900 text-xs md:text-sm uppercase tracking-wide">Email Akademik</h4>
+                                <p class="text-slate-600 mt-1">
+                                    <a href="mailto:panrenov.almuja2023@gmail.com" class="text-slate-500 hover:text-primary-600 transition-colors text-xs md:text-sm">
+                                        panrenov.almuja2023@gmail.com
+                                    </a>
                                 </p>
                             </div>
                         </div>
 
                         <!-- Jam Operasional -->
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-base shrink-0">
                                 <i class="fa-regular fa-clock"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wide">Hari & Jam Operasional</h4>
-                                <p class="text-slate-500 text-sm mt-1">Sabtu & Minggu: 08.00 - 16.00 WIB</p>
+                                <h4 class="font-bold text-slate-900 text-xs md:text-sm uppercase tracking-wide">Hari & Jam Operasional</h4>
+                                <p class="text-slate-500 text-xs md:text-sm mt-1">Sabtu & Minggu: 08.00 - 16.00 WIB</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- CTA Button -->
-                    <a href="https://wa.me/628111089722" target="_blank" class="inline-flex items-center justify-center gap-3 bg-emerald-600 text-white px-8 py-4.5 rounded-xl font-bold text-sm tracking-wider uppercase w-full sm:w-auto btn-depth-primary" style="box-shadow: 0 4px 0 0 #047857, 0 8px 16px -4px rgba(5, 150, 105, 0.3);">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Hubungi Bimbingan Belajar
+                    <a href="https://wa.me/628111089722" target="_blank" class="inline-flex items-center justify-center gap-2.5 bg-emerald-600 text-white px-6 py-3.5 rounded-xl font-bold text-xs md:text-sm tracking-wider uppercase w-full sm:w-auto btn-depth-primary" style="box-shadow: 0 4px 0 0 #047857, 0 6px 12px -2px rgba(5, 150, 105, 0.25);">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Hubungi Bimbingan Belajar
                     </a>
                 </div>
 
-                <!-- Google Maps (Proportional Layout Box) -->
-                <div class="relative rounded-3xl overflow-hidden shadow-premium h-[380px] sm:h-[450px] lg:h-[520px] bg-slate-950 border-8 border-white shrink-0 w-full">
-                     <!-- High-Fidelity Mockup Peta -->
-                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-gradient-to-br from-slate-900 to-slate-950 p-6 text-center">
-                        <div class="w-16 h-16 bg-slate-800/80 rounded-2xl flex items-center justify-center text-primary-500 mb-4 border border-slate-700">
-                            <i class="fa-solid fa-map-location-dot text-2xl"></i>
-                        </div>
-                        <h4 class="text-white font-extrabold text-lg">Peta Lokasi Masjid</h4>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31731.57767858196!2d106.8901476!3d-6.2045883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4b240b953bb%3A0x80a393c2f6991d94!2sMasjid%20Jami%20Al-Mujahidin!5e0!3m2!1sid!2sid!4v1781592628233!5m2!1sid!2sid"
-                            class="h-[380px] sm:h-[450px] lg:h-[520px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <span class="mt-4 bg-primary-600/10 text-primary-400 text-[10px] uppercase tracking-widest font-extrabold py-1.5 px-3 rounded-full border border-primary-500/10">GPS ready</span>
-                    </div>
+                <!-- Google Maps (Proportional Desktop Height Mapping) -->
+                <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-premium h-[300px] md:h-[400px] lg:h-full lg:min-h-[450px] bg-slate-100 border-4 md:border-8 border-white w-full">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31731.57767858196!2d106.8901476!3d-6.2045883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4b240b953bb%3A0x80a393c2f6991d94!2sMasjid%20Jami%20Al-Mujahidin!5e0!3m2!1sid!2sid!4v1781592628233!5m2!1sid!2sid" class="w-full h-full border-0 absolute inset-0 z-10" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-slate-50 p-6 text-center z-0">
+                        <i class="fa-solid fa-circle-notch animate-spin text-2xl text-primary-500 mb-2"></i>
+                        <span class="text-[10px] md:text-xs text-slate-500">Memuat Peta Lokasi...</span>
+                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 9. Footer (Consistent Design & Hierarchy) -->
-    <footer class="bg-slate-950 pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    <!-- 9. Footer -->
+    <footer class="bg-slate-950 pt-16 pb-8 md:pt-20 md:pb-10">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12 md:mb-16">
                 <!-- Brand Info -->
                 <div class="lg:col-span-2 text-white">
-                    <div class="flex items-center gap-3 mb-6">
+                    <div class="flex items-center gap-3 mb-5">
                         <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center font-bold text-lg shadow-md">
                             <i class="fa-solid fa-mosque"></i>
                         </div>
-                        <span class="font-extrabold text-xl tracking-tight">Bimbel <span class="text-primary-500">Al Mujahidin</span></span>
+                        <span class="font-extrabold text-lg md:text-xl tracking-tight">Bimbel <span class="text-primary-500">Al Mujahidin</span></span>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed max-w-sm mb-6">
                         "Belajar, Berprestasi, dan Berakhlak Mulia Bersama Masjid"
                     </p>
-                    <div class="flex space-x-3.5">
-                        <a href="https://www.youtube.com/@awankurniawan5322" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all duration-300">
-                            <i class="fa-brands fa-youtube text-sm"></i>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 md:w-9 md:h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all duration-300">
+                            <i class="fa-brands fa-instagram text-[10px] md:text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 md:w-9 md:h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all duration-300">
+                            <i class="fa-brands fa-facebook-f text-[10px] md:text-sm"></i>
+                        </a>
+                        <a href="https://youtube.com/@awankurniawan5322" class="w-8 h-8 md:w-9 md:h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all duration-300">
+                            <i class="fa-brands fa-youtube text-[10px] md:text-sm"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Navigation Links -->
                 <div>
-                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Menu Cepat</h4>
-                    <ul class="space-y-4 text-sm">
+                    <h4 class="text-white font-bold text-xs md:text-sm uppercase tracking-wider mb-5">Menu Cepat</h4>
+                    <ul class="space-y-3.5 text-xs md:text-sm">
                         <li><a href="#beranda" class="text-slate-400 hover:text-primary-500 transition-colors">Beranda</a></li>
                         <li><a href="#tentang" class="text-slate-400 hover:text-primary-500 transition-colors">Tentang Kami</a></li>
                         <li><a href="#program" class="text-slate-400 hover:text-primary-500 transition-colors">Program Unggulan</a></li>
@@ -736,8 +722,8 @@
 
                 <!-- Legal Information -->
                 <div>
-                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Informasi Resmi</h4>
-                    <ul class="space-y-4 text-sm">
+                    <h4 class="text-white font-bold text-xs md:text-sm uppercase tracking-wider mb-5">Informasi Resmi</h4>
+                    <ul class="space-y-3.5 text-xs md:text-sm">
                         <li><a href="#" class="text-slate-400 hover:text-primary-500 transition-colors">Syarat & Ketentuan</a></li>
                         <li><a href="#" class="text-slate-400 hover:text-primary-500 transition-colors">Kebijakan Privasi</a></li>
                         <li><a href="#kontak" class="text-slate-400 hover:text-primary-500 transition-colors">Hubungi Layanan</a></li>
@@ -747,16 +733,16 @@
             </div>
 
             <!-- Footer Bottom Section -->
-            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+            <div class="border-t border-slate-900 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-slate-500 text-[10px] md:text-xs text-center md:text-left">
                 <p>Copyright &copy; 2026 Bimbel Masjid Jami Al Mujahidin Kp. Lio. All rights reserved.</p>
                 <p class="font-semibold text-slate-600">Standardized & Built with Pride.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Scripts & Smooth Actions -->
+    <!-- Interactive Scripts -->
     <script>
-        // Smooth Mobile Menu Toggle
+        // Smooth Mobile Menu
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -764,7 +750,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile panel after click
         const navLinks = mobileMenu.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -778,7 +763,7 @@
             for (let i = 0; i < reveals.length; i++) {
                 const windowHeight = window.innerHeight;
                 const elementTop = reveals[i].getBoundingClientRect().top;
-                const revealPoint = 80;
+                const revealPoint = 60; // Adjusted for better mobile trigger
                 
                 if (elementTop < windowHeight - revealPoint) {
                     reveals[i].classList.add("active");
@@ -786,7 +771,6 @@
             }
         }
         window.addEventListener("scroll", revealElements);
-        // Fire initially
         revealElements();
 
         // Elegant Dynamic Header Scale
@@ -794,10 +778,10 @@
         window.addEventListener('scroll', () => {
             if (window.scrollY > 40) {
                 headerElement.classList.add('shadow-md');
-                headerElement.classList.replace('py-3', 'py-1');
+                headerElement.classList.replace('py-3', 'py-1.5');
             } else {
                 headerElement.classList.remove('shadow-md');
-                headerElement.classList.replace('py-1', 'py-3');
+                headerElement.classList.replace('py-1.5', 'py-3');
             }
         });
     </script>
