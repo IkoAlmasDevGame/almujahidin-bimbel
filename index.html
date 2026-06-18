@@ -121,7 +121,7 @@
 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#beranda" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Beranda</a>
+                    <a href="index.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Beranda</a>
                     <a href="#tentang" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Tentang Kami</a>
                     <a href="#program" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Program</a>
                     <a href="#jadwal" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Jadwal</a>
@@ -148,7 +148,7 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 shadow-xl absolute w-full">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#beranda" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-700 rounded-lg">Beranda</a>
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-700 rounded-lg">Beranda</a>
                 <a href="#tentang" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-700 rounded-lg">Tentang Kami</a>
                 <a href="#program" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-700 rounded-lg">Program Unggulan</a>
                 <a href="#jadwal" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-brand-50 hover:text-brand-700 rounded-lg">Jadwal</a>
@@ -311,6 +311,10 @@
                         <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4 text-2xl shadow-inner shrink-0">✏️</div>
                         <h4 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-brand-600 transition-colors">Kelas Calistung</h4>
                         <p class="text-sm text-gray-600 leading-relaxed flex-grow">Belajar membaca, menulis, dan berhitung untuk anak usia dini.</p>
+                        <a href="#" id="wa-btn-2" class="btn-depth-primary text-white text-center py-3.5 rounded-xl font-bold text-lg flex items-center justify-center gap-2 mt-4 shrink-0" target="_blank">
+                            <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                            Daftar Sekarang
+                        </a>
                     </div>
 
                     <!-- Program 4 -->
@@ -604,7 +608,7 @@
                                 </div>
                             </div>
 
-                            <a href="https://wa.me/6281200000000" target="_blank" class="btn-depth-primary text-white text-center py-3.5 rounded-xl font-bold text-lg flex items-center justify-center gap-2 mt-4 shrink-0">
+                            <a href="https://wa.me/628111089722" target="_blank" class="btn-depth-primary text-white text-center py-3.5 rounded-xl font-bold text-lg flex items-center justify-center gap-2 mt-4 shrink-0">
                                 <i class="ph-bold ph-whatsapp-logo text-xl"></i> Chat via WhatsApp
                             </a>
                         </div>
@@ -612,12 +616,11 @@
                         <!-- Google Maps Embed -->
                         <div class="relative h-[350px] md:h-[450px] lg:h-full w-full bg-gray-200">
                             <!-- Ganti src iframe di bawah dengan embed map asli -->
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.15573420042!2d106.75704153034988!3d-6.2415840632289415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x100c5e82dd4b820!2sJakarta%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253834.8209358926!2d106.8624443197421!3d-6.241434931581006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4b240b953bb%3A0x80a393c2f6991d94!2sMasjid%20Jami%20Al-Mujahidin!5e0!3m2!1sid!2sid!4v1781752750912!5m2!1sid!2sid"
                                 class="absolute inset-0 w-full h-full border-0"
                                 allowfullscreen="" 
                                 loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
+                                referrerpolicy="no-referrer-when-downgrade">                                
                             </iframe>
                         </div>
                     </div>
@@ -705,19 +708,30 @@
 Nama Lengkap : 
 Usia : 
 Kelas : 
-Alamat : 
-`;
+Alamat : `;
+
+            const messageTemplate2 = `Halo, saya ingin mendaftar program:
+*Kelas Calistung*
+
+Nama Lengkap : 
+Usia : 
+Kelas : 
+Alamat : `;
 
         // Melakukan encode pada teks agar bisa terbaca sebagai URL yang valid
         const encodedMessage = encodeURIComponent(messageTemplate);
     
         // Menggabungkan link wa.me dengan nomor dan pesan
         const waLink = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+        const waLink2 = `https://wa.me/${waNumber}?text=${encodedMessage}`;
     
         // Memasukkan link tersebut ke dalam href tombol HTML
         const waButton = document.getElementById("wa-btn");
+        const waButton2 = document.getElementById("wa-btn-2");
             if (waButton) {
             waButton.href = waLink;
+            }else if(waButton){
+                waButton2.href = waLink2
             }
         });
         
